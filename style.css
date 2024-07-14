@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 25px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.input-container input {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.input-container input[type="text"] {
+    width: 70%;
+}
+
+.input-container input[type="text"]:focus {
+    border-color: #3da33d;
+}
+
+.input-container input[type="button"] {
+    background-color: #3da33d;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-container input[type="button"]:hover {
+    background-color: #4fb94f;
+    transform: translateY(-2px);
+}
+
+ul {
+    width: 70%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+ul li:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li p {
+    flex-grow: 1;
+    padding: 2px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.deleteBtn {
+    color: #ff4d4d;
+}
+
+.deleteBtn:hover {
+    color: #ff1a1a;
+}
+
+.editBtn {
+    color: #00b300;
+}
+
+.editBtn:hover {
+    color: #009900;
+}
